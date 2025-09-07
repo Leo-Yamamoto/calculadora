@@ -30,7 +30,7 @@ cd calculadora
 ### 2. Instale o UV (se ainda não tiver)
 
 ```bash
-pip install uv
+https://astral.sh/uv/install.ps1
 ```
 
 ### 3. Crie e ative o ambiente virtual com UV
@@ -42,19 +42,14 @@ uv venv
 - Para ativar no PowerShell:
 
   ```bash
-  .\.venv\Scripts\Activate.ps1
-  ```
-
-- Para ativar no CMD:
-
-  ```bash
-  .\.venv\Scripts\activate.bat
+  uv venv
   ```
 
 ### 4. Instale as dependências com UV
 
 ```bash
-uv pip install dash dash-bootstrap-components
+uv add dash
+uv add dash_bootstrap_components
 ```
 
 ## Como executar
@@ -76,7 +71,7 @@ uv pip install dash dash-bootstrap-components
 ## Personalização
 
 - Para adicionar novas funcionalidades, modifique o arquivo `src/main.py`.
-- Para adicionar bibliotecas, digite uv add [biblioteca]
+- Para adicionar bibliotecas, digite `uv add [biblioteca]`
 
 ## Licença
 
